@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<h1>Datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+
+<p>Uitbreading: vraag nu ook het aantal bij te tellen geboortejaren op.</p>
+<p>Hoeveel jaren wens je erbij te tellen?</p>
+<p id="myResult"></p>
+<!--end html-->
+<!--begin javascript-->
+<script>
+    let yearOfBirth = window.prompt("What is your year of birth?")
+    let aantalTellen = prompt("How much do you want to add to the birth year?");
+    // yearOfBirth = yearOfBirth+1; it is redundant
+    // Number(yearOfBirth); if this is by itself its converted the string, but we didn't place that number in the var again not as a string but as a number
+    yearOfBirth = Number(yearOfBirth)+Number(aantalTellen); // This I can always write
+
+    //yearOfBirth+=1;
+    /* yearOfBirth = yearOfBirth+1; it is redundant
+                       this is the self as the one above
+                       this I can always write yearOfBirth = Number(yearOfBirth)+1;
+    document.getElementById("myResult").innerHTML  = yearOfBirth;
+
+    /*How to show
+    * 1. Get element
+    * 2.Doe something with the element
+    * 3. Give back the element*/
+    //aantalTellen = Number(aantalTellen); redundat since I already did this in line 26
+    // yearOfBirth = yearOfBirth + aantalTellen;
+    document.getElementById("myResult").innerHTML  = yearOfBirth;
+
+</script>
+<!--end javascript-->
+</body>
+</html>

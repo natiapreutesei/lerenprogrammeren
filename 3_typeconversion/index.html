@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<label for="">Enter your name:</label>
+<input type="text" id="myText">
+<button type="button" id="activateTextbox">Activate</button>
+<!--this is a html comment-->
+<!--end html-->
+<!--begin javascript-->
+<script>
+    // this is a javascript comment
+    document.getElementById("activateTextbox").onclick = function (){
+        var name = document.getElementById("myText").value;
+        console.log(name);
+    }
+    document.getElementById("myResult").innerHTML  = yearOfBirth;
+    // console.log(document.getElementById("myText").value); This we use when we just want to show the value on the screen but not place it in a variable
+</script>
+<!--end javascript-->
+</body>
+</html>

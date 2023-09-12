@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+
+<label for="">Enter your age:</label>
+<input type="text" id="myAge">
+<br>
+<label for="">Enter the amount that you want to add to the age:</label>
+<input type="text" id="myAmount">
+<button type="button" id="activateTextbox">Activate</button>
+<p id="myResult"></p>
+
+<script>
+    document.getElementById("activateTextbox").onclick = function (){
+        let age = document.getElementById("myAge").value;
+        let amount = document.getElementById("myAmount").value;
+
+        age = Number(age)+Number(amount);
+        document.getElementById("myResult").innerHTML  = age;
+    }
+
+    /*document.getElementById("activateTextbox").onclick = function (){
+        document.getElementById("myResult").innerHTML  = Number(document.getElementById("myAge").value)+Number(document.getElementById("myAmount").value);
+    }*/
+</script>
+</body>
+</html>
