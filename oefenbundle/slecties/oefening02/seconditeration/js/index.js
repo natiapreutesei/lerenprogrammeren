@@ -1,15 +1,15 @@
 document.getElementById("send").onclick = function () {
     let age = document.getElementById("age").value;
     if (age >= 18) {
-        document.write("You are " + age + " years old. You may participate in the National Lottery! ")
+        //document.write("You are " + age + " years old. You may participate in the National Lottery! ")
+        document.getElementById("result1").innerHTML  = "You are " + age + " years old. You may participate in the National Lottery! ";
 
 
-
-        let choiceToBuy = confirm("Do you want to play a full bulletin of 12 squares?");
+        /*let choiceToBuy = confirm("Do you want to play a full bulletin of 12 squares?");
         if (choiceToBuy) {
             document.write("The price of a full bulletin is 20 euro.")
         } else {
-            let numberSquares = prompt("How many squares do you want to bu? (2,4,6,8,10)");
+            let numberSquares = prompt("How many squares do you want to buy? (2,4,6,8,10)");
             switch (parseInt(numberSquares)) {
                 case 2:
                     document.write("The price for 2 squares is 4 euro.");
@@ -29,8 +29,9 @@ document.getElementById("send").onclick = function () {
                 default:
                     document.write("You didn't choose a correct number of squares. Chose again!");
             }
-        }
+        }*/
     } else {
-        document.write("You must be 18 year old to be eligible to enter the National Lottery!")
+        //document.write("You must be 18 years old to be eligible to enter the National Lottery!")
+        document.getElementById("result1").innerHTML  = "You are " + age + " years old. You may participate in the National Lottery! ";
     }
 }
