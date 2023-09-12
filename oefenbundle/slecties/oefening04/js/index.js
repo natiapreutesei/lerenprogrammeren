@@ -1,5 +1,6 @@
 // Total cannot be a negative number
 //Let the user know
+//try out
 
 let yearOfBirth = prompt("Enter your year of birth:");
 let currentYear = prompt("Enter current year:");
