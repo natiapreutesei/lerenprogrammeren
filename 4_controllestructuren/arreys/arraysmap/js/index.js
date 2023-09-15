@@ -1,6 +1,5 @@
-let data = ['Tom','Tim',1980,1973,'Bart','Els'];
+// map heeft een CALLBACK functie (can call himself back)
+let numbers = [1,2,3,4,5];
 
-for (index in data){
-    if (typeof data[index] !== 'string') break;
-    document.write(data[index] + "<br>")
-}
+let multiply = numbers.map((x) => x * 2);
+document.write(multiply);

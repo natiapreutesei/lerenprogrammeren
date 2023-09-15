@@ -1,9 +1,11 @@
-// while loop
-// while(conditie){
+// do while loop
+// do {
 // code
 // }
-let i= 1;
-while (i<10){
+// while(conditie)
+
+let i = 1;
+do {
     document.write(i);
-    i++;
-}
+    i++
+}while (i<10);

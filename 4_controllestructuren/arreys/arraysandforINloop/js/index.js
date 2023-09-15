@@ -1,4 +1,5 @@
 let cursisten = ['Tom','Tim','Bart','Els'];
-cursisten.forEach(function (element){
-    document.write(element + "<br>")
-})
+
+for (index in cursisten){
+    document.write(index, ":", cursisten[index], "<br>");
+}

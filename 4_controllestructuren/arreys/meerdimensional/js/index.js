@@ -1,3 +1,15 @@
-let cursisten = {"Firma":"ABC","Straat":"Steenstraat","Busnummer":"5","Postcode":"8800","Plaats":"Roeselare"};
+let courseTeacher = [
+    ['HTML5','TOM VANHOUTTE'],
+    ['MARKETING','MAXIME VANMAERCKE'],
+    ['LARAVEL','TOM VANHOUTTE']
+]
 
-document.write(cursisten["Firma"]);
+document.write(courseTeacher[1][1]);
+
+let courseTeacher = [
+    ['HTML5','TOM VANHOUTTE'],
+        {'COURSE':'MARKETING','PERSON':'MAXIME VANMAERCKE'},
+    ['LARAVEL','TOM VANHOUTTE']
+]
+
+document.write(courseTeacher[1]["PERSON"]);
